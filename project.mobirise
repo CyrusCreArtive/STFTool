@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "STF  Tools and Industrial",
-    "currentPage": "index.html",
+    "currentPage": "gallery.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -1267,7 +1267,6 @@
           "_params": {}
         },
         {
-          "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
@@ -2927,7 +2926,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/norbar-prof-torque-wrench-1800x1200-800x533.jpg",
                 "alt": "",
                 "customStyle1": "display-7",
-                "caption": "Norbar-Prof-Torque-Wrench<br>",
+                "caption": "NORBAR-PROF-TORQUE-WRENCH<br>",
                 "active": false,
                 "title": ""
               },
@@ -2940,7 +2939,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/torque-wrench-1800x1200-800x533.jpg",
                 "alt": "",
                 "customStyle1": "display-7",
-                "caption": "LIFTING EQUIPMENT<br>",
+                "caption": "TORQUE WRENCH<br>",
                 "active": false,
                 "title": ""
               }
