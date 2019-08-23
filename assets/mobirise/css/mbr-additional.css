@@ -1385,13 +1385,33 @@ body {
 .jq-selectbox li:hover,
 .jq-selectbox li.selected {
   background-color: #51bfed;
-  color: #000000;
+  color: #ffffff;
 }
-.jq-selectbox .jq-selectbox__trigger-arrow {
-  border-top-color: contrast(currentColor, #000000, #ffffff, 30%);
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
 }
-.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
   border-top-color: #51bfed;
+  border-bottom-color: #51bfed;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #000000 !important;
+  background-color: #51bfed !important;
+  box-shadow: none!important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #ff3366 !important;
+  box-shadow: none !important;
 }
 .cid-qINLFeHhkL .modal-body .close {
   background: #1b1b1b;
@@ -4736,87 +4756,58 @@ body {
   padding-bottom: 60px;
   background-image: url("../../../assets/images/mbr-1-1920x1193.jpg");
 }
-.cid-rnNbRKr3bQ {
-  padding-top: 120px;
-  padding-bottom: 90px;
+.cid-rzYnFYT0rw {
+  padding-top: 15px;
+  padding-bottom: 45px;
+  background-image: url("../../../assets/images/mbr-1920x1281.jpg");
+}
+.cid-rzYnFYT0rw h2 {
+  margin-bottom: 0;
+}
+.cid-rzYnFYT0rw h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+  width: 80%;
+}
+.cid-rzYnFYT0rw p {
+  color: #767676;
+  margin-bottom: 0;
+}
+.cid-rzYnFYT0rw .card-wrapper {
+  border-top: 1px solid #ffffff;
   background-color: #073b4c;
+  position: relative;
+  justify-content: unset;
 }
-.cid-rnNbRKr3bQ p {
-  color: #767676;
-}
-.cid-rnNbRKr3bQ .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rnNbRKr3bQ .accordion-content {
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-}
-.cid-rnNbRKr3bQ .panel-group {
+.cid-rzYnFYT0rw .card-wrapper .card-box {
+  padding: 2rem 1rem;
   width: 100%;
 }
-.cid-rnNbRKr3bQ .card {
-  border-radius: 0px;
-  margin-bottom: -1px;
+.cid-rzYnFYT0rw .card-wrapper .card-box .top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.cid-rnNbRKr3bQ .card .card-header {
-  border-radius: 0px;
-  border: 0px;
-  padding: 0;
+.cid-rzYnFYT0rw .card-wrapper .card-box .bottom-line {
+  width: 70%;
 }
-.cid-rnNbRKr3bQ .card .card-header a.panel-title {
-  margin-bottom: 0;
-  font-style: normal;
-  font-weight: 500;
-  display: block;
-  text-decoration: none !important;
-  margin-top: -1px;
-  line-height: normal;
-}
-.cid-rnNbRKr3bQ .card .card-header a.panel-title:focus {
-  text-decoration: none !important;
-}
-.cid-rnNbRKr3bQ .card .card-header a.panel-title h4 {
-  padding: 1.3rem 2rem;
-  border: 1px solid #dfdfdf;
-  margin-bottom: 0;
-}
-.cid-rnNbRKr3bQ .card .card-header a.panel-title h4 .sign {
-  padding-right: 1rem;
-}
-.cid-rnNbRKr3bQ .mbr-figure {
-  -webkit-align-self: flex-start;
-  align-self: flex-start;
-  padding-left: 4rem;
-  padding-left: 0;
-  padding-right: 4rem;
-}
-.cid-rnNbRKr3bQ .media-container-row {
-  -webkit-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-@media (max-width: 991px) {
-  .cid-rnNbRKr3bQ .media-container-row {
-    -webkit-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+@media (max-width: 767px) {
+  .cid-rzYnFYT0rw .card-wrapper .card-box .bottom-line {
+    width: 100%;
   }
-  .cid-rnNbRKr3bQ .mbr-figure {
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 2rem;
-    padding-top: 0;
-    padding-bottom: 2rem;
+  .cid-rzYnFYT0rw .card-wrapper .card-box .bottom-line p {
+    text-align: center;
+    margin: 1rem 0 0 0;
   }
 }
-.cid-rnNbRKr3bQ .panel-text {
+.cid-rzYnFYT0rw H2 {
   color: #ffffff;
 }
-.cid-rnNbRKr3bQ H4 {
+.cid-rzYnFYT0rw .card-title {
   color: #51bfed;
+  text-align: left;
 }
-.cid-rnNbRKr3bQ B {
-  color: #51bfed;
-}
-.cid-rnNbRKr3bQ H2 {
+.cid-rzYnFYT0rw P {
   color: #ffffff;
 }
 .cid-qINLRvkO5n {
